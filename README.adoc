@@ -1,26 +1,10 @@
-== Customer API Service Bootstrap
+== Customer API
 
-This zip file contains a bootstrapped shell that can be used to get started on the "Customer API
-Service" take-home problem.  This frees applicants from needing to spend time on build system
-boilerplate, so they can focus on the meat of their solution.
+This is a simple customer API service developed using Spring Boot and Apache Solr
 
-=== Contents
 
-* a simple build-system using Gradle
-* a single Spring "Controller" located [here](src/main/java/com/example/springboot/HelloController.java)
-* a single JUnit test located [here](src/test/java/com/example/springboot/HelloControllerTest.java)
-* a single JUnit integration test located [here](src/test/java/com/example/springboot/HelloControllerIT.java)
+=== Local Set up
 
-=== Working with the Stub Service
-
-The stub application follows common Gradle conventions around task names. The most useful of these
-are given below:
-
-* Compile: `./gradlew --info testCompile compile`
-* Test: `./gradlew --info test`
-* Package: `./gradlew --info clean build`
-* Run: `./gradlew --info bootRun` - runs the application on port 8080 of the local machine.
-
-=== Credit
-
-This stub application was based on a stub app included in SpringBoot's Hello World tutorial [here[(https://spring.io/guides/gs/spring-boot/)
+To run this service locally follow these steps:
+* Run Apache Solr locally on port 8983
+* Run :  `gradle bootRun`
